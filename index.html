@@ -1,4 +1,39 @@
 ---
-layout: home
+layout: single
+title: ""
+permalink: /
 author_profile: true
+classes: wide
 ---
+
+<!-- Section : Projets -->
+<h2 id="projets"> Mes projets</h2>
+
+<div class="projects">
+  {% for project in site.projects %}
+  <div class="projects__item">
+    <div class="projects__card">
+      <a href="{{ project.url | relative_url }}">
+        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="projects__image">
+      </a>
+      <div class="projects__content">
+        <h3 class="projects__title">{{ project.title }}</h3>
+        <div class="projects__description">
+          {{ project.content | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Section : Compétences -->
+<h2> Mes Compétences</h2>
+
+<ul class="competences">
+  <li><i class="fas fa-code"></i> <strong>Langages :</strong> Python, JavaScript, HTML/CSS</li>
+  <li><i class="fas fa-cubes"></i> <strong>Frameworks :</strong> Django, Flask, Django REST Framework</li>
+  <li><i class="fas fa-database"></i> <strong>Bases de données :</strong> SQLite, MySQL</li>
+  <li><i class="fas fa-tools"></i> <strong>Outils :</strong> Git, Docker, Virtualenv, JWT</li>
+  <li><i class="fas fa-users-cog"></i> <strong>Méthodologies :</strong> Méthode Agile, Gestion de Projet</li>
+</ul>

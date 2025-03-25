@@ -7,3 +7,136 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  color: #333 !important;
+}
+
+.masthead {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-bottom: 3px solid !important;
+}
+#projets {
+  margin-top: 3px;
+}
+
+.author__name,
+.page__title {
+  font-weight: 700 !important;
+}
+
+.page__title {
+  color: #333 !important;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.projects__item {
+  display: flex;
+}
+
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.projects__card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.projects__image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background-color: #fff;
+  padding: 1px;
+}
+
+.projects__content {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects__title {
+  font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.projects__description {
+  font-size: 0.8em;
+  color: #555;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: #4a90e2;
+}
+
+a:hover {
+  color: #357ABD;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 0.85em;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.btn--github {
+  background-color: lightgrey; /* GitHub dark grey */
+  color: #fff;
+}
+
+.btn--github:hover {
+  background-color: #444;
+  color: lightgrey;
+}
+
+.competences {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.competences li {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.competences li i {
+  color: #4a90e2;
+  min-width: 20px;
+}
