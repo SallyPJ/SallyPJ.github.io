@@ -18,8 +18,15 @@ body {
   box-shadow: none !important;
   border-bottom: 3px solid !important;
 }
-#projets {
-  margin-top: 3px;
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 2px solid #4a90e2;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 .author__name,
@@ -121,7 +128,9 @@ a:hover {
   background-color: #444;
   color: lightgrey;
 }
-
+#competence {
+  margin-top: 3px;
+}
 .competences {
   list-style: none;
   padding-left: 0;

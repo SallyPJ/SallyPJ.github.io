@@ -19,7 +19,7 @@ locale                   : "fr-FR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Portfolio - Sally PJ"
 title_separator          : "-"
-subtitle                 : "Mes projets GitHub"
+subtitle                 : #"Mes projets GitHub"
 name                     : "Sally PJ"
 description              : "Bienvenue sur mon portfolio personnel où vous trouverez mes projets réalisés sur GitHub dans le cadre de ma formation Openclassrooms et au-delà"
 url                      : "https://SallyPJ.github.io"
